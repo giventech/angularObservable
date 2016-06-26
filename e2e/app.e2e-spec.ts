@@ -7,8 +7,13 @@ describe('my-app-fg App', function() {
     page = new MyAppFgPage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display message saying app works', (done) => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    page.getTodosItems().then(items => {
+      expect(items.length).toBeGreaterThan(0);
+      done();
+    }, (error) => {
+      fail(error);
+    })
   });
 });

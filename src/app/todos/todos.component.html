@@ -1,0 +1,7 @@
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let todo of todos" [class.completed] = "todo.completed">
+    <input type="checkbox" [(ngModel)] = "todo.completed" >
+    {{todo.title | shout}}
+  </li>
+
+</ul>
