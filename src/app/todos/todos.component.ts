@@ -29,7 +29,9 @@ export class TodosComponent implements OnInit {
   // }
 
    ngOnInit() {
-       this.todos$ = this.todoService.getTodos();
+      const ajaxResponse$ = this.todoService.getTodos();
+      const delayedValues$ = ajaxResponse$.delay(2000);
+       this.todos$ = delayedValues$;
   }
 
 }
