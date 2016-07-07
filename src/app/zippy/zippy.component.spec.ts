@@ -2,7 +2,6 @@
 
 import { By }           from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
 
 import {
   beforeEach, beforeEachProviders,
@@ -11,11 +10,11 @@ import {
   async, inject
 } from '@angular/core/testing';
 
-import { NewTodoComponent } from './new-todo.component';
+import { ZippyComponent } from './zippy.component';
 
-describe('Component: NewTodo', () => {
+describe('Component: Zippy', () => {
   it('should create an instance', () => {
-    let component = new NewTodoComponent(new FormBuilder());
+    let component = new ZippyComponent();
     expect(component).toBeTruthy();
   });
 });

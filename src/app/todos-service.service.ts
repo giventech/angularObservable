@@ -31,7 +31,7 @@ export class TodosServiceService {
                        .get("/api/todos.json")
                        .map(response => <Todo[]> response.json());
                        // We have `Todo` as an interface not a class so that we don't have
-                       //   to write ugly mapping code like:
+                       // to write ugly mapping code like:
                        //
                       //  .map(todos => todos.map(t => {
                       //      var mapped = new Todo();

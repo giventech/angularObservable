@@ -4,6 +4,7 @@ import {Todo} from '../todo';
 import {ShoutPipe} from  '../shout.pipe';
 import {Observable} from  'rxjs/Rx';
 import {NewTodoComponent} from  '../new-todo';
+import {ZippyComponent} from  '../zippy';
 
 
 @Component({
@@ -12,13 +13,13 @@ import {NewTodoComponent} from  '../new-todo';
   templateUrl: 'todos.component.html',
   styleUrls: ['todos.component.css'],
   pipes: [ShoutPipe],
-  directives:[NewTodoComponent]
+  directives:[NewTodoComponent,ZippyComponent]
 
 })
 export class TodosComponent implements OnInit {
     // For dependency injection
     todos$:Observable<Todo[]>;
-    constructor(private todoService:TodosServiceService) {
+     constructor(private todoService:TodosServiceService) {
       
     }
  
