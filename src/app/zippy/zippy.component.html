@@ -5,6 +5,5 @@
 </p>
 <div class ="alert alert-info" *ngIf="(todoassignees)">Loading assignees </div>
 <li class="list-group-item" *ngFor="let todoassignee of todoassignees" >
-       {{todoassignee.name}}
- 
-  </li>
+       {{todoassignee.name}} {{todoassignee.role}}
+ </li>
