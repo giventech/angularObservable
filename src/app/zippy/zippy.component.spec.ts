@@ -2,7 +2,7 @@
 
 import { By }           from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
-
+import { TodoAssigneesService } from '../todo-assignees.service';
 import {
   beforeEach, beforeEachProviders,
   describe, xdescribe,
@@ -14,7 +14,7 @@ import { ZippyComponent } from './zippy.component';
 
 describe('Component: Zippy', () => {
   it('should create an instance', () => {
-    let component = new ZippyComponent();
+    let component = new ZippyComponent( new TodoAssigneesService());
     expect(component).toBeTruthy();
   });
 });
