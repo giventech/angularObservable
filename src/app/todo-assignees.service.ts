@@ -7,12 +7,12 @@ const todosAssignee: TodoAssignee[] = [
       assigned: true
     },
     {
-      name: 'Fabrice GINAPE',
+      name: 'Fabrice  Michel GINAPE',
       role: 'Administrator',
       assigned: true
     },
     {
-      name: 'Fabrice GINAPE',
+      name: 'Fabrice Michel GINAPE',
       role: 'Administrator',
       assigned: true
     }

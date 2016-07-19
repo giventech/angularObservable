@@ -5,7 +5,7 @@ import {ShoutPipe} from  '../shout.pipe';
 import {Observable} from  'rxjs/Rx';
 import {NewTodoComponent} from  '../new-todo';
 import {ZippyComponent} from  '../zippy';
-
+import { Router,  ROUTER_DIRECTIVES } from '@angular/router';
 
 @Component({
   moduleId: module.id,
@@ -13,15 +13,17 @@ import {ZippyComponent} from  '../zippy';
   templateUrl: 'todos.component.html',
   styleUrls: ['todos.component.css'],
   pipes: [ShoutPipe],
-  directives:[NewTodoComponent,ZippyComponent]
+  directives:[NewTodoComponent,ZippyComponent,ROUTER_DIRECTIVES]
 
 })
 export class TodosComponent implements OnInit {
     // For dependency injection
     todos$:Observable<Todo[]>;
-     constructor(private todoService:TodosServiceService) {
+    constructor(private todoService:TodosServiceService,
+                private todoRouter: Router) {
       
     }
+   
  
   // Insert initialisation code here
   // ngOnInit() {

@@ -6,7 +6,7 @@ import {TodoAssigneesService} from '../todo-assignees.service';
 @Component({
   moduleId: module.id,
   selector: 'app-zippy',
-  templateUrl: 'zippy.component.html',
+  templateUrl:'zippy.component.html',
   styleUrls: ['zippy.component.css'],
   providers: [TodoAssigneesService]
 })
