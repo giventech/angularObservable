@@ -6,6 +6,7 @@ import { TodosComponent }   from './todos/todos.component';
 export const TodoRoutes: RouterConfig = [
    
            { path:'assignee',  component: ZippyComponent },
+           { path:'home',  component: TodosComponent },
    
 ];
 
