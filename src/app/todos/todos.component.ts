@@ -13,14 +13,13 @@ import { Router,  ROUTER_DIRECTIVES } from '@angular/router';
   templateUrl: 'todos.component.html',
   styleUrls: ['todos.component.css'],
   pipes: [ShoutPipe],
-  directives:[NewTodoComponent,ZippyComponent,ROUTER_DIRECTIVES]
+  directives:[NewTodoComponent,ROUTER_DIRECTIVES]
 
 })
 export class TodosComponent implements OnInit {
     // For dependency injection
     todos$:Observable<Todo[]>;
-    constructor(private todoService:TodosServiceService,
-                private todoRouter: Router) {
+    constructor(private todoService:TodosServiceService) {
       
     }
    
@@ -32,7 +31,7 @@ export class TodosComponent implements OnInit {
   // }
 
    ngOnInit() {
-      const ajaxResponse$ = this.todoService.getTodos();
+         const ajaxResponse$ = this.todoService.getTodos();
       const delayedValues$ = ajaxResponse$.delay(2000);
        this.todos$ = delayedValues$;
   }
