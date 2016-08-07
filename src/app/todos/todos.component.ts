@@ -13,7 +13,7 @@ import { Router,  ROUTER_DIRECTIVES } from '@angular/router';
   templateUrl: 'todos.component.html',
   styleUrls: ['todos.component.css'],
   pipes: [ShoutPipe],
-  directives:[NewTodoComponent,ROUTER_DIRECTIVES]
+  directives:[ROUTER_DIRECTIVES]
 
 })
 export class TodosComponent implements OnInit {

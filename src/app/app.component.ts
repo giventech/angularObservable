@@ -13,7 +13,7 @@ import {ShoutPipe} from  './shout.pipe';
   //encapsulation: ViewEncapsulation.None,
   styleUrls: ['app.component.css'],
   pipes:[ShoutPipe]
-})
+})  
 export class AppComponent {
   newTitle = 'app works!';
   doSomething() {
