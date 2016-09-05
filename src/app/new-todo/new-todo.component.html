@@ -7,15 +7,5 @@
   <button class="btn btn-default" type="submit" [disabled]="!todoTitle.valid"> submite </button>
 </form>
 
- <ul class="nav nav-tabs nav-justified">
-     <li> <a [routerLink]="['/assignee']">Todos Assignees 1</a></li>
-     <li><a  [routerLink]="['/home']">Todo Tasks</a></li>
-</ul>
-   
-<!-- Routed views go here -->
-<router-outlet>
-  <app-todos>
-  </app-todos>
-</router-outlet>
 
  

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder,Validators,FormGroup} from '@angular/forms';
-import { Router,  ROUTER_DIRECTIVES } from '@angular/router';
+import { Router } from '@angular/router';
 import { TodosComponent } from '../todos';
 
 
@@ -9,7 +9,7 @@ import { TodosComponent } from '../todos';
   selector: 'app-new-todo',
   templateUrl: 'new-todo.component.html',
   styleUrls: ['new-todo.component.css'],
-  directives:[TodosComponent,ROUTER_DIRECTIVES]
+
 })
 export class NewTodoComponent implements OnInit {
   myForm:FormGroup; 

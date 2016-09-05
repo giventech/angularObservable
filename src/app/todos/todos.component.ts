@@ -5,15 +5,14 @@ import {ShoutPipe} from  '../shout.pipe';
 import {Observable} from  'rxjs/Rx';
 import {NewTodoComponent} from  '../new-todo';
 import {ZippyComponent} from  '../zippy';
-import { Router,  ROUTER_DIRECTIVES } from '@angular/router';
 
 @Component({
   moduleId: module.id,
   selector: 'app-todos',
   templateUrl: 'todos.component.html',
   styleUrls: ['todos.component.css'],
-  pipes: [ShoutPipe],
-  directives:[ROUTER_DIRECTIVES]
+
+
 
 })
 export class TodosComponent implements OnInit {

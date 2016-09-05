@@ -1,18 +1,18 @@
 import { Component, ViewEncapsulation } from '@angular/core';
-import {TodosComponent} from './todos';
-import {TodosServiceService} from './todos-service.service';
+import { TodosComponent} from './todos';
+import { TodosServiceService} from './todos-service.service';
 import { NewTodoComponent } from './new-todo/new-todo.component';
-import {ShoutPipe} from  './shout.pipe';
-
+import { ShoutPipe} from  './shout.pipe';
+// import { Router,  ROUTER_DIRECTIVES } from '@angular/router';
 @Component({
   moduleId: module.id,
   selector: 'app-root',
   templateUrl: 'app.component.html',
-  directives: [NewTodoComponent],
+  // directives: [NewTodoComponent,ROUTER_DIRECTIVES],
   providers: [TodosServiceService],
   //encapsulation: ViewEncapsulation.None,
   styleUrls: ['app.component.css'],
-  pipes:[ShoutPipe]
+  // pipes:[ShoutPipe]
 })  
 export class AppComponent {
   newTitle = 'app works!';

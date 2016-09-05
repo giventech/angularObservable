@@ -1,14 +1,12 @@
+/// <reference path="../../../typings/main/ambient/jasmine/index.d.ts" />
 /* tslint:disable:no-unused-variable */
 
 import { By }           from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 import { TodoAssigneesService } from '../todo-assignees.service';
 import {
-  beforeEach, beforeEachProviders,
-  describe, xdescribe,
-  expect, it, xit,
-  async, inject
-} from '@angular/core/testing';
+  inject, TestBed 
+} from '@angular/core/testing'
 
 import { ZippyComponent } from './zippy.component';
 

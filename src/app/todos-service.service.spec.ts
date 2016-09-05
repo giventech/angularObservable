@@ -1,15 +1,17 @@
+/// <reference path="../../typings/main/ambient/jasmine/index.d.ts" />
 /* tslint:disable:no-unused-variable */
 
 import {
-  beforeEach, beforeEachProviders,
-  describe, xdescribe,
-  expect, it, xit,
-  async, inject
+ 
+  async, inject,TestBed
 } from '@angular/core/testing';
 import { TodosServiceService } from './todos-service.service';
 
 describe('TodosService Service', () => {
-  beforeEachProviders(() => [TodosServiceService]);
+  TestBed.configureTestingModule({
+    providers: [ TodosServiceService ]
+  });
+
 
   it('should ...',
       inject([TodosServiceService], (service: TodosServiceService) => {

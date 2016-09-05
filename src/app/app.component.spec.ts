@@ -1,14 +1,15 @@
+/// <reference path="../../typings/main/ambient/jasmine/index.d.ts" />
 /* tslint:disable:no-unused-variable */
 
 import {
-  beforeEach, beforeEachProviders,
-  describe, xdescribe,
-  expect, it, xit,
-  async, inject
+  
+  async, inject,TestBed
 } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+ TestBed.configureTestingModule({
+    providers: [ AppComponent ]
+  });
 
-beforeEachProviders(() => [AppComponent]);
 
 describe('App: MyAppFg', () => {
   it('should create the app',
